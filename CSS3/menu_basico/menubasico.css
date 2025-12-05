@@ -1,0 +1,13 @@
+nav{
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+nav div{
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 5px;
+}

@@ -1,0 +1,39 @@
+body {
+    margin: 20px;
+}
+
+main {
+    counter-reset: chapter-counter 0;
+}
+
+h2 {
+    counter-reset: subsection-counter 0;
+    counter-increment: chapter-counter;
+    color: blue;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h2:before {
+    content: "Capítulo " counter(chapter-counter) ": ";
+}
+
+h3 {
+    counter-increment: subsection-counter;
+
+    color: black;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+h3:after {
+    color: green;
+    font-style: italic;
+    content: " - Subsección " counter(chapter-counter) "." counter(subsection-counter);
+}

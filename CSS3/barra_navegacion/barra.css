@@ -1,0 +1,27 @@
+nav{
+    background-color: lightblue;
+    position: relative;
+    padding: 5px;
+}
+nav div{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    display: inline-block;
+    position:relative;
+    left: 700px;
+}
+
+nav div:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding: 10px;
+    display: inline-block;
+    position:relative;
+    left: 700px;
+}
+
+.image{
+    
+}

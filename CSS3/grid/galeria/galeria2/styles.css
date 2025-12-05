@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+h1 {
+  position: relative;
+  padding-bottom: 10px; 
+  margin-bottom: 30px;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 150px; 
+  height: 3px;
+  background-color: #e30713; 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.photo-collage-grid-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+
+    grid-template-rows: 180px 360px 240px 200px; 
+
+    gap: 12px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+
+    align-items: stretch;
+    justify-items: stretch;
+    background: white; 
+    padding: 10px;
+    box-sizing: border-box;
+
+    grid-template-areas:
+        "laptop1   laptop2   laptop2  pelicula"
+        "cocacola  cocacola  rojo      pelicula"
+        "cocacola  cocacola  nike      nike"
+        "airpods    iphone    iphone    iphone";
+}
+
+.photo-collage-grid-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+
+
+#laptop1 { grid-area: laptop1; }
+#laptop2 { grid-area: laptop2; }
+#pelicula { grid-area: pelicula; }
+#cocacola { grid-area: cocacola; }
+#rojo { grid-area: rojo; }
+#nike { grid-area: nike; }
+#airpods { grid-area: airpods; }
+#iphone { grid-area: iphone; }

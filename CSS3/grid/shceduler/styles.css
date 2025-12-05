@@ -1,0 +1,73 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.calendar-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.month-header {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-top: 1px solid #eee;
+}
+
+.day-name {
+    padding: 10px 5px;
+    text-align: center;
+    font-weight: 600;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    border-left: none;
+    border-right: none;
+}
+
+.day-cell {
+    height: 100px;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-top: none;
+    border-left: none;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1em;
+    color: #333;
+}
+
+.calendar-grid > .day-cell {
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.calendar-grid > .day-cell:nth-child(7n+1) {
+    border-left: none;
+}
+
+.calendar-grid > .day-cell:nth-child(7n) {
+    border-right: none;
+}
+
+.empty-cell {
+    background-color: #f7f7f7;
+    color: transparent;
+}

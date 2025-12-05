@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio práctico con Tablas</title>
+    <style>
+        /* Estilos básicos para la tabla */
+        table {
+            width: 80%; /* Ancho de la tabla para mejor visualización */
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            vertical-align: middle; /* Alineación vertical de contenido */
+        }
+        /* Estilo para las listas dentro de las celdas */
+        ul {
+            list-style-type: disc;
+            text-align: left; /* Alinea los puntos de la lista a la izquierda */
+            margin: 0;
+            padding-left: 20px;
+        }
+        /* Estilo para las imágenes, si se incluyeran archivos reales */
+        .product-image {
+            max-width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio práctico con Tablas</h1>
+
+    <table>
+        <tr>
+            <td rowspan="2">&nbsp;</td> 
+
+            <td colspan="3" rowspan="2">
+                <img src="img/mp3.jpg" alt="Reproductor MP3 pequeño" class="product-image">
+            </td>
+            
+            <td colspan="2" rowspan="2">
+                <img src="img/mp3grande.jpeg" alt="Reproductor MP3 grande" class="product-image">
+            </td>
+        </tr>
+
+        <tr>
+            </tr>
+
+        <tr>
+            <td><strong>Capacidad</strong></td> 
+            <td>2GB</td>
+            <td>4GB</td>
+            <td>8GB</td>
+            <td>32GB</td>
+            <td>2GB</td>
+        </tr>
+
+        <tr>
+            <td><strong>Colores</strong></td> 
+            <td>Blanco</td>
+            <td>
+                <ul>
+                    <li>Negro</li>
+                    <li>Rosa</li>
+                    <li>Dorado</li>
+                </ul>
+            </td>
+            <td>Negro</td>
+            <td colspan="2">
+                <ul>
+                    <li>Negro</li>
+                    <li>Blanco</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Pantalla</strong></td> 
+            <td colspan="3">3 pulgadas</td>
+            <td colspan="2">7 pulgadas</td>
+        </tr>
+
+        <tr>
+            <td><strong>Tiempo de Carga</strong></td> 
+            <td colspan="3">1 hora</td>
+            <td colspan="2">
+                5 horas <br> 
+                30 minutos para 75%
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

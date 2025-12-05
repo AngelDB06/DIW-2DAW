@@ -1,0 +1,25 @@
+p {
+    color: purple;
+    border: dotted;
+}
+
+.a {
+    display: none;
+}
+
+.b {
+    width: 100px;
+    height: 50px;
+    display: inline;
+}
+
+.c {
+    display: block;
+}
+
+.d {
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+
+}

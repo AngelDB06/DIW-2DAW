@@ -1,0 +1,78 @@
+div{
+    width: 300px;
+    height: 300px;
+    border: 3px, dashed, red;
+    outline-offset: -5px;
+
+    margin: 10px auto;
+}
+
+div:first-of-type{
+    background-color: black;
+}
+
+div:nth-of-type(2){
+    background-image:url(img/puesta-sol.jpg);
+}
+
+div:nth-of-type(3){
+    background-image:url(img/puesta-sol.jpg);
+    background-size: 19em;
+}
+
+div:nth-of-type(4){
+    background-image: url(img/puesta-sol.jpg);
+    background-size: 8em;
+    background-repeat: no-repeat;
+}
+
+div:nth-of-type(5){
+    background-color: lightskyblue;
+    background-image: url(img/puesta-sol.jpg);
+    background-repeat: no-repeat;
+    background-size: 8em;
+    background-position: bottom center;
+}
+
+div:nth-of-type(6){
+    background-image: url(img/puesta-sol.jpg);
+    background-size: cover;
+    background-clip: content-box;
+    padding: 15px;
+}
+
+div:nth-of-type(7){
+    background-color: lightskyblue;
+    background-image: url(img/puesta-sol.jpg);
+    background-repeat: no-repeat;
+    background-size: 30em;
+    background-position: -10%;
+}
+
+div:nth-of-type(8){
+    background-image: url(img/puesta-sol.jpg);
+    width: 100%;
+    background-attachment: fixed;
+}
+
+div:nth-of-type(9){
+    margin: 0 auto;
+    width: 70%;
+    height: 300px;
+    border: dashed red 3px;
+    background-image: url(img/favicon.png),url(img/puesta-sol.jpg);
+    background-size: 110px 100px,100% 100%;
+    background-repeat: repeat-x,no-repeat;
+    margin-bottom: 20px;
+}
+
+div:nth-of-type(10){
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url(img/arbol.png),url(img/aves.png),url(img/cielo.png);
+    background-size: 100% 100%,100% 60%,100% 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+
+}

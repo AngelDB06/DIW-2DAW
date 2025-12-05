@@ -1,0 +1,13 @@
+a:visited{
+    color: greenyellow;
+    
+}
+
+section:target h1{
+    color: green;
+}
+
+section:target h1::before{
+    content: "> ";
+    color: green;
+}

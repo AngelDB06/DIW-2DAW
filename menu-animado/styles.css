@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rectangle{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    clip-path: polygon(0 0, 26% 0, 26% 100%, 0% 100%);
+    z-index: -1;
+}
+
+.container {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img {
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text h2 {
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3rem;
+}
+
+.text button {
+    width: 30%;
+    height: 15%;
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+.hamburguesa {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    clip-path: circle();
+    width: 40px;
+    height: 40px;
+}
+
+.hamburguesa .lineas {
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburguesa .lineas div {
+    width: 40%;
+    height: 2px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 12px;
+}
+
+.modal {
+    width: 100%;
+    background-color: rgb(82, 183, 136);
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    transition: 0.5s;
+    clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .menu {
+    color: white;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal .cruz {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    background-color: rgb(74, 78, 105);
+    clip-path: circle();
+    width: 40px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.cruz:hover,
+.hamburguesa:hover {
+    cursor: pointer;
+}
+
+#menu:target {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}

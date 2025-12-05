@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 720px;
+}
+
+.caja {
+    width: 180px;
+    height: 90px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 90px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 0.3em solid transparent;
+}
+
+.servicios {
+    color: yellow;
+    border-top: 0.3em solid yellow;
+    transition: border-top 0.5s ease-out;
+}
+
+.servicios:hover {
+    border-top: 100em solid yellow;
+}
+
+.recursos {
+    color: red;
+    border-top: 0.3em solid red;
+}
+
+.proyectos {
+    color: green;
+    border-top: 0.3em solid green;
+}
+
+.contacto {
+    color: blueviolet;
+    border-top: 0.3em solid blueviolet;
+}

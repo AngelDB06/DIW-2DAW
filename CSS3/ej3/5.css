@@ -1,0 +1,60 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1 {
+            color: #004d99;
+            font-size: 2em;
+            border-bottom: 2px solid #004d99;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .indice {
+            counter-reset: chapter-counter 2; 
+        }
+
+        .indice h2 {
+            color: #004d99;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .indice h2:before {
+            counter-increment: chapter-counter;
+            content: "Capítulo " counter(chapter-counter) " — ";
+        }
+
+        .indice h3 {
+            counter-reset: subsection-counter; 
+            font-size: 1.1em;
+            font-weight: normal;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .indice h3:before {
+            counter-increment: subsection-counter;
+            content: counter(chapter-counter) "." counter(subsection-counter, lower-alpha) " → ";
+            font-weight: bold;
+            color: #333;
+        }
+
+        .indice h4 {
+            font-size: 1em;
+            font-weight: normal;
+            margin-left: 60px;
+            margin-top: 5px;
+            color: #555;
+            list-style: none;
+        }
+        
+        .indice h4:before {
+            content: "★ ";
+            color: #ff9900;
+            margin-right: 5px;
+        }

@@ -1,0 +1,153 @@
+body {
+    background-color: #ffffff;
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.datos {
+    border: 4px solid #795548;
+    background-color: #63594d;
+    width: 1080px;
+    padding: 0;
+    color: white;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.acceso {
+    border: 1px solid #795548;
+    background-color: #b18573;
+    width: 820px;
+    padding: 15px 20px 20px 20px;
+    color: black;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.personaliza{
+    border: 1px solid #795548;
+    background-color: #d6e4c3;
+    width: 820px;
+    padding: 15px 20px 20px 20px;
+    color: black;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.documentos{
+    border: 1px solid #795548;
+    background-color: #c2b291;
+    width: 820px;
+    padding: 15px 20px 20px 20px;
+    color: black;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.otros{
+    border: 1px solid #795548;
+    background-color: #eae3d1;
+    width: 820px;
+    padding: 15px 20px 20px 20px;
+    color: black;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 15px 20px 20px 20px;
+    position: relative;
+}
+
+legend {
+    border: 1px solid #795548;
+    background-color: #eae3d1;
+    color: black;
+    font-size: 14px;
+    padding: 3px 8px;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    border-radius: 2px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+input,
+select {
+    padding: 3px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.fila {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+    gap: 25px;
+}
+
+.nombre {
+    width: 200px;
+}
+
+.apellidos {
+    width: 200px;
+}
+
+.dni {
+    width: 130px;
+}
+
+.localidad {
+    width: 190px;
+}
+
+.provincia {
+    width: 100px;
+}
+
+.fecha {
+    width: 140px;
+}
+
+.direccion {
+    width: 310px;
+}
+
+.codpostal {
+    width: 130px;
+}
+
+.email {
+    width: 310px;
+}
+
+.telefono {
+    width: 130px;
+}
+
+input[type="date"] {
+    color: #333;
+}
+
+.subopciones{
+    list-style: none;
+}
+
+.botones {
+    margin-left: 20px;
+}

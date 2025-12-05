@@ -1,0 +1,79 @@
+div {
+    width: 600px;
+    height: 200px;
+    border: 4px solid black;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 50px;
+    line-height: 200px;
+    margin: 0 auto;
+    margin-left: 100px;
+}
+
+p:first-of-type {
+    color: blueviolet;
+    text-shadow: 3px 3px 5px grey;
+}
+
+div:nth-of-type(2) {
+    background-color: deepskyblue;
+}
+
+div:nth-of-type(2) p {
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+div:nth-of-type(3) {
+    background-color: rgb(174, 174, 174);
+}
+
+div:nth-of-type(3) p {
+    color:  rgb(174, 174, 174);
+    text-shadow: -1px -1px white, 1px 1px black
+}
+
+div:nth-of-type(4) {
+    background-color: rgb(174, 174, 174);
+}
+
+div:nth-of-type(4) p {
+    color:  rgb(174, 174, 174);
+    text-shadow: 1px 1px white , -1px -1px black ;
+}
+
+div:nth-of-type(5) {
+    background-color: deepskyblue;
+}
+
+div:nth-of-type(5) p {
+    color:  deepskyblue;
+    text-shadow:  0px 0px 2px black ;
+}
+
+div:nth-of-type(6) p {
+    color:  black;
+    text-shadow:  0px 0px 10px red ;
+}
+
+div:nth-of-type(7) p {
+    color:  black;
+    text-shadow:  0px 0px 10px blue ;
+}
+
+div:nth-of-type(7) p {
+    color:  black;
+    text-shadow:  0px 0px 10px blue ;
+}
+
+div:nth-of-type(8) p {
+    color:  grey;
+    text-shadow:  1px 1px turquoise, 2px 2px grey, 3px 3px turquoise ;
+}
+
+div:nth-child(9) p{
+    color: grey;
+    text-shadow: 0 0 5px #ff8c00, 0 0 7.5px #ffa500, 0 -2.5px 7.5px #ff7f00, 0 -5px 10px #ffd700, 0 -7.5px 12.5px rgba(255, 140, 0, 0.7), 0 -12.5px 17.5px rgba(255, 69, 0, 0.5), 0 -20px 25px rgba(255, 0, 0, 0.3), 0 -22.5px 27.5px black
+}

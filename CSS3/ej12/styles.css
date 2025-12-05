@@ -1,0 +1,165 @@
+body { 
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #efefe7 !important;
+    border-bottom: 1px solid #ccc;
+    height: 85px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.nav-logo {
+    position: absolute;
+    right: 30%;
+    top: 10px;
+    border: 3px solid green;
+    padding: 5px;
+    background: white;
+}
+
+.nav-logo img {
+    height: 55px;
+}
+
+.nav-menu {
+    position: absolute;
+    left: 30%;
+    transform: translateX(-45%);
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.nav-menu > ul > li {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.nav-menu > ul > li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-menu ul .active {
+    background-color: #b62626;
+    color: white;
+}
+
+.nav-submenu,
+.nav-submenu-level2 {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.nav-submenu li a {
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-submenu > li > a {
+    background-color: #56fa50;
+}
+
+.nav-submenu > li > a:hover {
+    background-color: #7253fa;
+}
+
+.nav-submenu-level2 {
+    left: 100%;
+    top: 0;
+    background-color: #56fa50;
+    min-width: 250px;
+}
+
+.nav-submenu-level2 li a {
+    background-color: #56fa50;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-submenu-level2 li a:hover {
+    background-color: #7253fa;
+}
+
+.nav-menu > ul > li:hover > .nav-submenu {
+    display: block;
+}
+
+.nav-menu > ul > li:hover .nav-submenu-level2,
+.nav-submenu li:hover > .nav-submenu-level2 {
+    display: block;
+}
+
+.nav-menu > ul > li:nth-child(2) > a:hover,
+.nav-menu > ul > li:nth-child(3) > a:hover {
+    background-color: #7253fa;
+    color: white;
+}
+
+.hero-section {
+    height: 500px;
+    background-image: 
+    url('img/bosque.jpg'),
+    url('img/montana.jpg'),
+    url('img/playa.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero-content p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.btn-enroll {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #f56a33;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.btn-enroll:hover {
+    background-color: #a34823;
+}

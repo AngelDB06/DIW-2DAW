@@ -1,0 +1,116 @@
+div {
+    margin-bottom: 20px;
+}
+
+div:first-of-type h1 {
+    background: linear-gradient(purple 40%, pink);
+    background-clip: text;
+    color: transparent;
+}
+
+div:nth-of-type(2) {
+    width: 800px;
+    height: 200px;
+    background: linear-gradient(to right, black, blue, yellow, green, red);
+}
+
+div:nth-of-type(3) {
+    width: 800px;
+    height: 200px;
+    background: linear-gradient(to bottom, blue 0%, blue 11%, yellow 11%, yellow 22%, red 22%, red 33%, blue 33%, blue 44%, yellow 44%, yellow 55%, red 55%, red 66%, blue 66%, blue 77%, yellow 77%, yellow 88%, red 88%, red 100%);
+}
+
+div:nth-of-type(4){
+    width: 350px;
+    height: 200px;
+    background: radial-gradient(ellipse at center, orange, red, black);
+}
+
+div:nth-of-type(5){
+    width: 350px;
+    height: 200px;
+    background: radial-gradient(ellipse at center, yellow 0%, yellow 50%, red 55%, red 55%,black 80%);
+}
+
+div:nth-of-type(6){
+    width: 350px;
+    height: 200px;
+    background: radial-gradient(circle, yellow 0%, yellow 65%, red 70%, red 70%,black );
+}
+
+div:nth-of-type(7){
+    width: 350px;
+    height: 200px;
+    background: radial-gradient(circle at left, yellow 0%, yellow 65%, red 75%, red 75%,black );
+}
+
+div:nth-of-type(8){
+    width: 350px;
+    height: 100px;
+    background: radial-gradient(circle, blue 0%, red 50%, yellow 100%);
+}
+
+div:nth-of-type(9){
+    width: 350px;
+    height: 100px;
+    background: radial-gradient(ellipse at center, blue 0%, red 35%, yellow 90%);
+}
+
+div:nth-of-type(10){
+    width: 350px;
+    height: 100px;
+    background: radial-gradient(circle, blue 0%, red 45%, yellow );
+}
+
+div:nth-of-type(11){
+    width: 350px;
+    height: 200px;
+    background: radial-gradient(
+    circle,
+    #ff6b6b 0%, #ff6b6b 10%,
+    #ff0000 10%,#ff0000 20%,
+    #800000 20%,#800000 30%,
+    #ff0000 30%,#ff0000 40%,
+    #ff6b6b 40%,#ff6b6b 50%,
+    #800000 50%,#800000 60%,
+    #ff0000 60%,#ff0000 70%,
+    #ff6b6b 70%,#ff6b6b 80%,
+    #800000 80%,#800000 90%,
+    #ff0000 90%,#ff0000 100%);
+}
+
+div:nth-of-type(12){
+    width: 350px;
+    height: 200px;
+    background: linear-gradient(
+    to bottom right, 
+    #000033 0%,
+    #000066 30%, 
+    #0000CC 70%,
+    #0000FF 100% 
+  );
+}
+
+div:nth-of-type(13){
+    width: 350px;
+    height: 200px;
+background: conic-gradient(
+
+    yellow 0%,
+    blue 8%,
+    red 16%,
+    yellow 25%,
+    
+    blue 33%,
+    red 41%,
+    yellow 50%,
+    
+    blue 58%,
+    red 66%,
+    yellow 75%,
+    
+    blue 83%,
+    red 91%,
+    yellow 100%
+  );
+}

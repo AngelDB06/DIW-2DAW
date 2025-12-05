@@ -1,0 +1,34 @@
+    main section article {
+        counter-increment: parte; 
+        margin-bottom: 30px;
+    }
+
+    main section article h2 {
+        counter-reset: subparte; 
+        
+        font-size: 1.5em; 
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        padding-top: 5px;
+    }
+
+    main section article h2::before {
+        content: "Parte " counter(parte) " - ";
+    }
+
+    main section article h3 {
+        counter-increment: subparte; 
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    main section article h3::before {
+        content: counter(parte) "." counter(subparte) ") ";
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
