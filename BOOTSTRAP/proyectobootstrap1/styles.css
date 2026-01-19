@@ -127,6 +127,18 @@ background-size: cover;
 .bg-alpha-color {
     background-color: var(--bg-aplha-color);
 }
+/* Estilos de la página clientes.html */
+
+.bg-second-alpha-color {
+    background-color: var(--second-aplha-color);
+}
+
+/* Estilos página contactos.html */
+
+.carousel-caption {
+    z-index: 1;
+}
+
 /* Media query */
 
 @media screen and (min-width:992px) {

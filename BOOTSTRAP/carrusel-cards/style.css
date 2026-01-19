@@ -1,0 +1,61 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.card-img-wrapper {
+    height: 200px; /* Fixed height for consistency */
+    overflow: hidden;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-top {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures images cover the area nicely */
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.text-success {
+    color: #198754 !important; /* Bootstrap success green */
+}
+
+/* Custom button color to match the golden yellow */
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.btn-warning:hover {
+    background-color: #ffca2c;
+    border-color: #ffc720;
+}
+
+/* Carousel Control Visibility */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 50%, 50%; /* Adjust icon size inside the circle */
+}

@@ -1,0 +1,16 @@
+.carousel {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item video {
+    object-fit: cover;
+    /* Increase height slightly if needed, or stick to auto to maintain aspect ratio */
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
